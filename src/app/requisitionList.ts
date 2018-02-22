@@ -1,0 +1,27 @@
+import { Requisition } from './requisition';
+
+export const REQUISITIONLIST: Requisition[] = [
+	{isSelected:false, requisition:'Senior User Experience Developer', requisitionId:35607895, recruiter: 'Johnny Appleseed', hiringManager:'Franklin Thompson', privacy:'Public'},
+	{isSelected:false, requisition:'VP of User Experience', requisitionId:41024578, recruiter: 'Johnny Appleseed', hiringManager:'Tonya Kennedy', privacy:'Public'},
+	{isSelected:false, requisition:'User Experience Developer', requisitionId:43128918, recruiter: 'Garry Blair', hiringManager:'Adam Sims', privacy:'Public'},
+	{isSelected:false, requisition:'VP of User Experience', requisitionId:43128925, recruiter: 'Garry Blair', hiringManager:'Tonya Kennedy', privacy:'Public'},
+	{isSelected:false, requisition:'User Experience Developer', requisitionId:41024558, recruiter: 'Johnny Appleseed', hiringManager:'Neal Conner', privacy:'Public'},
+	{isSelected:false, requisition:'Senior User Experience Designer', requisitionId:41024579, recruiter: 'Johnny Appleseed', hiringManager:'Tami Rios', privacy:'Public'},
+	{isSelected:false, requisition:'User Experience Designer', requisitionId:42894591, recruiter: 'Johnny Appleseed', hiringManager:'Alexander Hanson', privacy:'Public'},
+	{isSelected:false, requisition:'VP of User Experience', requisitionId:43572136, recruiter: 'Garry Blair', hiringManager:'Tonya Kennedy', privacy:'Confidential'},
+	{isSelected:false, requisition:'User Experience Developer', requisitionId:43572138, recruiter: 'Garry Blair', hiringManager:'Isaac Adkins', privacy:'Public'},
+	{isSelected:false, requisition:'User Experience Manager', requisitionId:4289458797, recruiter: 'Johnny Appleseed', hiringManager:'Tami Rios', privacy:'Public'},
+	{isSelected:false, requisition:'User Experience Developer', requisitionId:43572134, recruiter: 'Johnny Appleseed', hiringManager:'Isaac Adkins', privacy:'Confidential'},
+	{isSelected:false, requisition:'User Experience Designer', requisitionId:43572134, recruiter: 'Johnny Appleseed', hiringManager:'Evan Webster', privacy:'Public'},
+	{isSelected:false, requisition:'User Experience Designer', requisitionId:43572139, recruiter: 'Garry Blair', hiringManager:'Neal Conner', privacy:'Public'},
+	{isSelected:false, requisition:'Senior User Experience Developer', requisitionId:42894587, recruiter: 'Johnny Appleseed', hiringManager:'Adam Sims', privacy:'Confidential'},
+	{isSelected:false, requisition:'VP of User Experience', requisitionId:42894589, recruiter: 'Johnny Appleseed', hiringManager:'Evan Webster', privacy:'Public'},
+	{isSelected:false, requisition:'User Experience Lead', requisitionId:43128915, recruiter: 'Garry Blair', hiringManager:'Stuart Roberson', privacy:'Confidential'},
+	{isSelected:false, requisition:'User Experience Developer', requisitionId:43128915, recruiter: 'Garry Blair', hiringManager:'Franklin Thompson', privacy:'Public'},
+	{isSelected:false, requisition:'User Experience Designer', requisitionId:43128917, recruiter: 'Garry Blair', hiringManager:'Neal Conner', privacy:'Confidential'},
+	{isSelected:false, requisition:'User Experience Tools Engineer', requisitionId:35678925, recruiter: 'Johnny Appleseed', hiringManager:'Alexander Hanson', privacy:'Confidential'},
+	{isSelected:false, requisition:'Mail User Interface Software Engineer', requisitionId:35607899, recruiter: 'Johnny Appleseed', hiringManager:'Adam Sims', privacy:'Public'},
+	{isSelected:false, requisition:'User Experience Developer', requisitionId:431289127, recruiter: 'Garry Blair', hiringManager:'Franklin Thompson', privacy:'Confidential'},
+	{isSelected:false, requisition:'User Experience Designer', requisitionId:35678920, recruiter: 'Johnny Appleseed', hiringManager:'Franklin Thompson', privacy:'Public'},
+	{isSelected:false, requisition:'Senior User Experience Developer', requisitionId:35678921, recruiter: 'Johnny Appleseed', hiringManager:'Isaac Adkins', privacy:'Public'},
+]

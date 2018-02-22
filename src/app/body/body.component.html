@@ -1,0 +1,59 @@
+<div>
+  <section class="buttons-placeholder">
+    <button class="req-buttons left" [ngClass]="{'active':myReq}" (click)="setReq('myReq')">My Requisitions</button>
+    <button class="req-buttons right" [ngClass]="{'active':allReq}" (click)="setReq('allReq')">All Requisitions</button>
+  </section>
+  <section>
+    <input class="search search-icon" type="text" [(ngModel)]="filterText" placeholder="Search by Requisition Name, Requisition ID, Recruiter, Hiring Manager">
+  </section>
+  <table class="standard-table">
+    <tr class="header-row">
+      <th style="width:60px;">
+        <span></span>
+      </th>
+      <th>
+        <span (click)="sort('requisition')">Requisition</span>
+      </th>
+      <th style="width:145px;">
+        <span (click)="sort('requisitionId')">Requisition ID </span>
+      </th>
+      <th style="width:145px;">
+        <span (click)="sort('recruiter')">Recruiter</span>
+      </th>
+      <th style="width:145px;">
+        <span (click)="sort('hiringManager')">Hiring Manager</span>
+      </th>
+      <th style="width:145px;">
+        <span (click)="sort('privacy')">Privacy</span>
+      </th>
+    </tr>
+    <tr *ngFor="let requisition of pagedItems | FilterPipe : filterText | SelectPipe : selectItem | orderBy: {property: column, direction: direction}">
+      <td>
+          <input [value]='requisition.isSelected' type="radio" >
+      </td>
+      <td>
+        <span>{{requisition.requisition}}</span>
+      </td>
+      <td>
+        <span>{{requisition.requisitionId}}</span>
+      </td>
+      <td>
+        <span>{{requisition.recruiter}}</span>
+      </td>
+      <td>
+        <span>{{requisition.hiringManager}}</span>
+      </td>
+      <td>
+        <span>{{requisition.privacy}}</span>
+      </td>
+    </tr>
+  </table>
+
+  <div  *ngIf="pager.pages && pager.pages.length" class="pagination-nav md pagination-container">
+      <span class="page left" [ngClass]="{disabled:pager.currentPage === 1}" (click)="setPage(pager.currentPage - 1)"> < </span>
+      <span class="page" *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}" (click)="setPage(page)">{{page}}</span> 
+      <span class="page right" [ngClass]="{disabled:pager.currentPage === pager.totalPages}" (click)="setPage(pager.currentPage + 1)"> ></span>
+  </div> 
+
+  
+</div>
